@@ -154,9 +154,9 @@ in your browser.
 
 ## 📸 Project Preview
 
-```
+
 ![Resume Page Preview](image.png)
----
+
 
 ## 📚 Learning Purpose
 
