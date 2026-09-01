@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+    <header>
+      <h1>Create Your Account</h1>
+      <h2>Fill in the details below</h2>
+    </header>
+    <main>
+      <section id="personal-information">
+        <fieldset>
+            <legend>Personal Information</legend>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            pattern="[A-Za-z ]{3,}"
+            required
+          /><br /><br />
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            pattern="[A-Za-z ]{3,}"
+            required
+          /><br /><br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+          /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            minlength="8"
+            required
+          /><br /><br />
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            minlength="8"
+            required
+          /><br /><br />
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"   
+            min="18"
+            max="60"
+            required
+          /><br /><br />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+        </fieldset>
+      </section>
+      <section id="gender">
+        <h3>Gender</h3>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" required />
+            <label for="other">Other</label><br /><br />
+      </section>
+      <section id="skills">
+        <h3>Skills / Interest</h3>
+            <input type="checkbox" id="html" name="skills" value="html" />
+            <label for="html">HTML</label><br />
+            <input type="checkbox" id="css" name="skills" value="css" />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" id="javascript" name="skills" value="javascript" />
+            <label for="javascript">JavaScript</label><br />
+            <input type="checkbox" id="java" name="skills" value="java" />
+            <label for="java">Java</label><br />
+            <input type="checkbox" id="react" name="skills" value="react" />
+            <label for="react">React</label><br />
+            <input type="checkbox" id="spring-boot" name="skills" value="spring-boot" />
+            <label for="spring-boot">Spring Boot</label><br /><br />
+      </section>
+      <section id="course-details">
+        <fieldset>
+            <legend>Course Details</legend>
+            <label for="course">Choose a course:</label>
+            <select id="course" name="course" required>
+              <option value="" disabled selected>--Please choose an option--</option>
+              <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="react">React</option>
+              </optgroup>
+                <optgroup label="Backend">
+                    <option value="java">Java</option>
+                    <option value="spring-boot">Spring Boot</option>
+                    <option value="postgresql">PostgreSQL</option>
+                </optgroup>
+            </select><br /><br />
+        </fieldset>
+      </section>
+      <section id="about-section">
+        <h3>About Yourself</h3>
+            <label for="about">Tell us about yourself:</label><br /> <br />
+            <textarea
+              id="about"
+              name="about"
+              rows="4"
+              cols="50"
+              placeholder="Write something about yourself..."
+              required
+            ></textarea><br /><br />
+    
+      </section>
+        <section id="submit">
+    
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">I agree to the terms and conditions</label><br /><br />
+            <button type="submit">Create Account</button>
+            <button type="reset">Reset</button>
+        </section>
+    </main>
+    </form>
+  </body>
+</html>
